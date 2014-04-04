@@ -1,7 +1,7 @@
 window.AudioContext = window.AudioContext || window.webkitAudioContext;
 
-(function($, undefined) {
-  var synth = {
+(function(undefined) {
+  window.libsynth = {
     osc: function(audioContext, waveform, freq) {
       var o = audioContext.createOscillator();
       o.type = waveform;
@@ -10,10 +10,4 @@ window.AudioContext = window.AudioContext || window.webkitAudioContext;
     }
   };
 
-  var ctx = new AudioContext();
-  var o = synth.osc(ctx, 'sine', 440.0);
-  o.start(0);
-  o.connect(ctx.destination);
-  o.stop(1);
-
-})(jQuery);
+})();

@@ -1,0 +1,26 @@
+* {
+  font-family: helvetica;
+}
+
+table#drum {
+  border-collapse: collapse;
+}
+
+table#drum td {
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+}
+
+#play-pause {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.active {
+  background-color: red;
+}
+
+.marked {
+  background-color: blue;
+}
